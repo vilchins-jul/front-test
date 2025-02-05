@@ -1,0 +1,177 @@
+/* Стиль для контейнера */
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat" !important;
+  background: linear-gradient(#2E07B2, #3F0374);
+  /*display: flex;
+  justify-content: center; */
+}
+
+.MuiTypography-root, .MuiOutlinedInput-input {
+  font-family: "Montserrat" !important;
+}
+
+.all {
+  position: relative;
+  /* height: 100%;  */
+  overflow: hidden;
+}
+
+.list-image {
+  gap: 20px;
+}
+
+.image {
+  width: 35px !important;
+  background-color: currentcolor;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100%; */
+  padding: 0em 4em;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.list {
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  font-size: 4.5rem !important;
+  line-height: 1;
+}
+
+.rectagular {
+  position: absolute;
+  /* : 'center'; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #C47A2C;
+  z-index: -1;
+  place-self: anchor-center;
+}
+
+/* .box {
+  height: 80vh;
+  align-items: center;
+  background-color: #C47A2C;
+} */
+
+/* Для больших экранов */
+.card-container {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: visible;
+  font-family: "Montserrat" !important;
+}
+
+/* Текстовые стили */
+h5, p {
+  margin: 0 0 10px;
+  font-weight: normal;
+  font-family: "Montserrat" !important;
+}
+
+h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat" !important;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  color: #666;
+  font-family: "Montserrat" !important;
+}
+
+@media (max-width: 1200px) {
+  .flex {
+    padding: 0em 2em;
+  }
+  .title {
+    font-size: 2rem !important;
+  }
+  .list-image {
+    gap: 15px;
+    font-size: 0.86rem;
+  }
+  .image {
+    width: 25px !important;
+    border-radius: 8px;
+  }
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 600px) {
+  .all {
+    height: 100%;
+  }
+
+  .MuiOutlinedInput-inpit {
+    font-size: 2em;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+
+  .flex {
+    flex-direction: column;
+    /* height: 100%; */
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .rectagular {
+    height: 100%;
+    background-color: white;
+  }
+
+  .card-container {
+    max-width: 90%;
+    padding: 16px;
+    overflow: visible;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .MuiTextField-root {
+    margin-bottom: 10px;
+  }
+
+  .MuiButton-root {
+    margin-top: 16px;
+  }
+
+  .MuiTypography-root {
+    font-size: 0.875rem;
+  }
+
+  .MuiOutlinedInput-input {
+    font-size: 0.875rem;
+  }
+}
+
