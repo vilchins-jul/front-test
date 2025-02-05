@@ -4,7 +4,6 @@ import Login from './Login';
 import Registration from './Registration';
 import Admin from './Admin';
 import UserDetailPage from "./UserDetailPage";
-import Navbar from './Navbar';
 import './App.css';
 
 function App() {
